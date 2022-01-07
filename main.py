@@ -14,6 +14,8 @@ def calculate(event):
     d= a*b*c
     e=str(d)
     incomeaftertax=tk.Label(text="The Income after Income tax is: "+ e).grid(row=2,column=2)
+    w.after(6000,incomeaftertax.destroy)
+
 
 hours.bind("<Return>",calculate)
 
